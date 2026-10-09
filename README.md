@@ -6,7 +6,7 @@ Yab, Yet Another Browser: a free WebKit browser for the Mac, for people and for 
 brew install --cask serafimcloud/tap/yab
 ```
 
-This installs `yab.app` in Applications and the `yab` command. Needs macOS 15.4 or later.
+This installs `yab.app` in Applications and the `yab` command. Needs macOS 15.4 or later. Already have Yab from the website? Add `--adopt` and Homebrew takes over the copy you have.
 
 - Yab updates itself, several times a day when there's something new, so `brew upgrade` leaves it alone. The cask always downloads the newest build.
 - The `yab` command is the app's own binary with `YAB_CLI=1` set, the same as the one Yab's Settings › Developers puts in `~/.local/bin`. Either works; you need only one.

@@ -8,7 +8,8 @@ cask "yab" do
   desc "WebKit browser for people and their AI agents"
   homepage "https://yetanotherbrowser.com/"
 
-  auto_updates true
+  # Yab updates itself. With `version :latest`, `brew upgrade` leaves it alone
+  # already, and Homebrew's audit refuses `auto_updates` beside it.
   depends_on macos: :sequoia
 
   # The disk image holds "Open yab", an installer that carries yab.app.
